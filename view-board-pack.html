@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>View Board Pack</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.flatly.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo3.png" height="50" alt="Logo"></a>
+
+            <div class="navbar-left">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fa fa-folder-open button-icon"></i>Board Packs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="board-members.html">
+                            <i class="fa fa-user button-icon"></i>Board Members</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html">
+                            <i class="fa fa-phone button-icon"></i>Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="account.html">
+                            <i class="fa fa-user-circle button-icon"></i>Account
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-sign-out-alt button-icon"></i>Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main" class="container bg-light">
+        <br/>
+        <h3 style="margin-top:0px">View Board Pack</h3>
+
+        <div class="card">
+            <div class="card-body">
+                <i class="fa fa-exclamation-triangle button-icon text-warning"></i>
+                This board pack has already been sent. You can send it to more members, but you cannot edit it anymore.
+            </div>
+        </div>
+        <br />
+
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="email-title">Email title:</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" value="Board Pack Q2" disabled required class="form-control" name="email-title" id="email-title" placeholder="Enter title">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="meeting-date">Meeting date:</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" value="2019/05/01" disabled required class="form-control" name="meeting-date" id="meeting-date">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">Attachments:</div>
+                <div class="col-sm-6">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <a class="attachment-item text-info" href="#">Presentation.ppt</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <a class="attachment-item text-info" href="#">Business Plan.pdf</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <a class="attachment-item text-info" href="#">Summary.pdf</a>
+                        </li>
+                    </ul>
+
+                    <!-- <input style="margin-top:15px" type="file" class="form-control-file"> -->
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="to">To:</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" required list="to-list" class="form-control" name="to" id="to" placeholder="Everyone">
+                    <datalist id="to-list">
+                        <option value="Poggie Poggenpoel">
+                        <option value="Hegbertus Oldewage">
+                        <option value="Jan Pool">
+                    </datalist>
+
+                    <div>
+                        <span class="member-badge badge badge-primary">Okkie de Kokkie<i class="fa fa-times-circle"></i></span>
+                    </div>
+
+                    <div>
+                        <span>Already sent to:</span>
+                        <span class="member-badge badge badge-primary">Poggie Poggenpoel</span>
+                        <span class="member-badge badge badge-primary">Hegbertus Oldewage</span>
+                        <span class="member-badge badge badge-primary">Jan Pool</span>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-2">
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary btn-lg button-uniform">
+                            <i class="fa fa-user button-icon"></i>Members
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">
+                    <label for="email-message">Email message:</label>
+                </div>
+                <div class="col-sm-8">
+                    <textarea class="form-control" disabled required name="email-message" id="email-message" rows="10" placeholder="Enter the message">
+Good day,
+
+Here are the board packs for the new meeting. All hail Doge!
+
+Regards,
+Sonnie Suikerriet
+                    </textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 justify-content-between d-flex">
+                    <!-- <input type="submit" class="btn btn-primary btn-lg button-uniform" value="Send"> -->
+                    <button type="button" class="btn btn-primary btn-lg button-uniform">
+                        <i class="fa fa-paper-plane button-icon"></i>Send
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary btn-lg button-uniform">
+                        <i class="fa fa-save button-icon"></i>Save Draft
+                    </button>
+                </div>
+            </div>
+        </form>
+        <br /><br /><br />
+    </div>
+</body>
+
+</html>
